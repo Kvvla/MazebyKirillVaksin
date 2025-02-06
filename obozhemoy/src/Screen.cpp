@@ -22,7 +22,7 @@ void Screen::update() {
         clear();
         for (int y=0; y<HEIGHT; y++) {
             for(int x=0; x<WIDTH; x++) {
-                std::cout<<buffer[y][x]<<" ";
+                std::cout<<buffer[y][x];
             }
             cout<<endl;
         }

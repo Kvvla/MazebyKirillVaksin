@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
     Keyboard k;
-    //РљРѕСЃС‚С‹Р»СЊ! РЇ РїС‹С‚Р°Р»СЃСЏ СЃРґРµР»Р°С‚СЊ keys Рё РІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂРµ, Рё РІ С…РµР°РґРµСЂРµ, РЅРѕ РЅРёС‡С‚Рѕ РЅРµ СЂР°Р±РѕС‚Р°Р»Рѕ, РїСЂРёС€Р»РѕСЃСЊ РїСЂРѕРїРёСЃС‹РІР°С‚СЊ РІ main
+    //КОСТЫЛЬ! У меня нигде не получалось заполнить словарь keys - ни в конструкторе, не в Header'е, только тут работает
     k.keys ={
             {"A",0x41},
             {"B",0x42},
@@ -75,27 +75,31 @@ int main()
     Player pl(1,1);
     bool run=true;
     bool moven=true;
+    int steps=0;
     while (run) {
 
 
 
         if (k.isPressed(k.keys["W"])) {
-            pl.move(pl.x, pl.y-1, Matr);
-            moven=true;
+            moven=pl.move(pl.x, pl.y-1, Matr);
+
+
         }
         else if (k.isPressed(k.keys["A"])) {
-            pl.move(pl.x-1, pl.y, Matr);
-            moven=true;
+            moven=pl.move(pl.x-1, pl.y, Matr);
+
         }
         else if (k.isPressed(k.keys["S"])) {
-            pl.move(pl.x, pl.y+1, Matr);
-            moven=true;
+            moven=pl.move(pl.x, pl.y+1, Matr);
+
         }
         else if (k.isPressed(k.keys["D"])) {
-            pl.move(pl.x+1, pl.y, Matr);
-            moven=true;
+            moven=pl.move(pl.x+1, pl.y, Matr);
+            //moven=true;
         }
+
         if (moven){
+            steps++;
             for (int i=0; i<23; i++){
                 for (int j=0; j<50; j++){
                         screen.draw(j, i, Matr[i][j].c);
@@ -109,7 +113,8 @@ int main()
         }
         moven=false;
     }
-
+    cout<<"You've solved the maze!"<<endl<<"Amount of steps you've done: "<<steps<<endl;
+    Sleep (5000);
 
     return 0;
 }

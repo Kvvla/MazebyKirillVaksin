@@ -12,7 +12,7 @@ class Player
     public:
         Player(int _x, int _y);
         virtual ~Player();
-        void move(int NewX, int NewY, Obj matr[23][50]);
+        bool move(int NewX, int NewY, Obj matr[23][50]);
         void update(Screen screen);
 
         int x;

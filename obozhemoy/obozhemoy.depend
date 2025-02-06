@@ -1,13 +1,13 @@
 # depslib dependency file v1.0
-1738399920 source:c:\users\kvvak\onedrive\Рабочий стол\c++\obozhemoy\src\keyboard.cpp
+1738400100 source:c:\users\kvvak\onedrive\Рабочий стол\c++\obozhemoy\src\keyboard.cpp
 	"Keyboard.h"
 	"iostream"
 
-1738399938 c:\users\kvvak\onedrive\Рабочий стол\c++\obozhemoy\include\keyboard.h
+1738400100 c:\users\kvvak\onedrive\Рабочий стол\c++\obozhemoy\include\keyboard.h
 	<Windows.h>
 	<map>
 
-1738399784 source:c:\users\kvvak\onedrive\Рабочий стол\c++\obozhemoy\main.cpp
+1738771103 source:c:\users\kvvak\onedrive\Рабочий стол\c++\obozhemoy\main.cpp
 	<iostream>
 	"Screen.h"
 	"Keyboard.h"
@@ -21,7 +21,7 @@
 	<iostream>
 	<vector>
 
-1738399462 source:c:\users\kvvak\onedrive\Рабочий стол\c++\obozhemoy\src\screen.cpp
+1738771153 source:c:\users\kvvak\onedrive\Рабочий стол\c++\obozhemoy\src\screen.cpp
 	"Screen.h"
 	<windows.h>
 
@@ -31,13 +31,13 @@
 1738399462 c:\users\kvvak\onedrive\Рабочий стол\c++\obozhemoy\include\obj.h
 	"Screen.h"
 
-1738399462 source:c:\users\kvvak\onedrive\Рабочий стол\c++\obozhemoy\src\player.cpp
+1738771103 source:c:\users\kvvak\onedrive\Рабочий стол\c++\obozhemoy\src\player.cpp
 	<vector>
 	"Obj.h"
 	"Screen.h"
 	"Player.h"
 
-1738399462 c:\users\kvvak\onedrive\Рабочий стол\c++\obozhemoy\include\player.h
+1738771103 c:\users\kvvak\onedrive\Рабочий стол\c++\obozhemoy\include\player.h
 	<vector>
 	"Obj.h"
 	"Screen.h"
